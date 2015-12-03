@@ -26,8 +26,8 @@ RUN chmod 664 /etc/oraInst.loc && \
 # Copy all install files an execute the installation
 ADD db_install.rsp /tmp/db_install.rsp
 ADD install.sh /tmp/install/install.sh
-ADD linuxamd64_12102_database_1of2.zip /tmp/install/linuxamd64_12102_database_1of2.zip
-ADD linuxamd64_12102_database_2of2.zip /tmp/install/linuxamd64_12102_database_2of2.zip
+ADD files/linuxamd64_12102_database_1of2.zip /tmp/install/linuxamd64_12102_database_1of2.zip
+ADD files/linuxamd64_12102_database_2of2.zip /tmp/install/linuxamd64_12102_database_2of2.zip
 RUN cd /tmp/install && \
   unzip linuxamd64_12102_database_1of2.zip && \
   unzip linuxamd64_12102_database_2of2.zip && \
